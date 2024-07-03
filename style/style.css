@@ -239,15 +239,13 @@ ul li a:hover {
 .aboutus-img {
     position: relative;
     width: 55%;
+    text-align: right;
 }
 
 .our-mission {
     background-color: #343268;
     border-radius: 16px;
     color: white;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     width: 395px;
     padding: 30px;
     position: absolute;
@@ -255,10 +253,6 @@ ul li a:hover {
     text-align: left;
 }
 
-.aboutus-img {
-    text-align: right;
-    position: relative;
-}
 
 .our-mission h1 {
     font-size: 26px;
@@ -269,4 +263,66 @@ ul li a:hover {
     font-size: 16px;
     opacity: 0.7;
 
+}
+/* Service section */
+.service-container{
+    background-color: #fffff5;
+    margin-top: 150px;
+    border-radius: 16px;
+    padding: 40px 30px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+}
+.service-card{
+    position: relative;
+    border-radius: 48px;
+    width: 100%;
+}
+.service-card img{
+    border-radius: 24px;
+    width: 100%;
+    height: 400px;
+    object-fit: fill;
+}
+.our-service{
+    width: 320px;
+    border-radius: 16px;
+    color: white;
+    padding:20px 30px;
+    background-image: linear-gradient(#343268, #343265);
+    position: absolute;
+    /* background: transparent; */
+    bottom: 20px;
+    opacity: 0.8;
+    left: 20px;
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+}
+.our-service h1 {
+    font-size: 20px;
+    font-weight: 600px;
+}
+
+.our-service p {
+    font-size: 12px;
+    opacity: 0.7;
+    width: 237px;
+
+}
+.service-content{
+    position: relative;
+
+}
+.arrow{
+    position: absolute;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    background-color: #FFE03D;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    right: 0%;
+    bottom: -15%;
 }
