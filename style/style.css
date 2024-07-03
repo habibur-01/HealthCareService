@@ -339,70 +339,80 @@ ul li a:hover {
     margin-top: 150px;
     color: #020043;
 }
-.testimonial-content{
+
+.testimonial-content {
     display: flex;
     justify-content: space-between;
     gap: 30px;
 }
-.testimonial-card{
+
+.testimonial-card {
     background-color: #fffff5;
     width: 370px;
     border-radius: 8px;
-    padding:20px 16px;
-  
+    padding: 20px 16px;
+
 
 }
-.testimonial-title{
+
+.testimonial-title {
     font-size: 20px;
     font-weight: 500px;
     line-height: 30px;
     margin-bottom: 10px;
 }
 
-.testimonial-details{
-   font-size: 12px;
-   opacity: 0.8;
-   margin-bottom: 20px;
-   opacity: 0.6;
+.testimonial-details {
+    font-size: 12px;
+    opacity: 0.8;
+    margin-bottom: 20px;
+    opacity: 0.6;
 }
-.user-details{
+
+.user-details {
     display: flex;
     align-items: center;
     gap: 20px;
-    
-    
-    
+
+
+
 }
-.user-details img{
+
+.user-details img {
     width: 44px;
     height: 44px;
     border-radius: 50%;
 }
-.user-name{
+
+.user-name {
     font-size: 12px;
     font-weight: 800;
     margin-bottom: 5px;
 }
-.user-profession{
+
+.user-profession {
     font-weight: 300;
     opacity: 0.6;
 }
-.checked{
+
+.checked {
     color: #FFE03D;
-    
+
 }
-.radio-btn{
+
+.radio-btn {
     display: flex;
     justify-content: center;
     margin-top: 30px;
 }
+
 .radio-btn input[type="radio"] {
     appearance: none;
     -webkit-appearance: none;
     -moz-appearance: none;
     width: 10px;
     height: 10px;
-    
+
     border: 2px solid #ccc;
     border-radius: 50%;
     cursor: pointer;
@@ -411,26 +421,64 @@ ul li a:hover {
 }
 
 .radio-btn input[type="radio"]:checked {
-    background-color: #FFE03D; /* Change this to your desired color */
-    
+    background-color: #FFE03D;
+
 }
 
-.radio-btn input[type="radio"]:checked::after {
-    content: "";
-    width: 12px;
-    height: 12px;
-    border-radius: 50%;
-    background: #FFE03D;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
 
 /* FAQ */
 .accordion-container {
     width: 100%;
+    color: #020043;
+    margin-top: 100px;
+    margin-bottom: 100px;
+
 }
+
+.faq-content {
+    margin-top: 10px;
+}
+
+.question {
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 30px 4px 30px;
+    background-color: #fffff5;
+    border-radius: 8px;
+
+
+}
+
+.answer p {
+    font-size: 14px;
+    padding: 10px 30px 30px 20px;
+}
+
+.answer {
+    border-top: 1px solid rgb(187, 187, 183);
+    background-color: #ffffff;
+    display: none;
+    border-bottom-right-radius: 8px;
+    border-bottom-left-radius: 8px;
+}
+
+
+.question h1 {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.question.active+.answer {
+    display: block;
+}
+.question.active .arrow-down {
+    display: none;
+}
+
+.arrow-down:hover {
+    cursor: pointer;
+}
+
 
 .accordion-label {
     display: block;
