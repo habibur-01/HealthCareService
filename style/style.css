@@ -76,7 +76,7 @@ ul li a:hover {
 .banner-container img {
     width: 100%;
     height: 100%;
-    filter: brightness(75%);
+    /* filter: brightness(50%); */
     border-radius: 60px;
     overflow: hidden;
     border: 1px solid #020043;
@@ -88,9 +88,11 @@ ul li a:hover {
     bottom: 0%;
     height: 100%;
     width: 100%;
-    background-image: linear-gradient(#c1d4da, #aec4cc, #8690aa);
-    mix-blend-mode: darken;
+    /* background-color: #c1d4da/0.5 ; */
+    background-image: linear-gradient(to right, rgba(52, 54, 54, 0.5), rgba(174, 196, 204, 0.3));
+    background-blend-mode: overlay;
     border-radius: 60px;
+    z-index: 10;
 
 }
 
@@ -431,7 +433,7 @@ ul li a:hover {
     width: 100%;
     color: #020043;
     margin-top: 100px;
-    margin-bottom: 100px;
+    margin-bottom: 150px;
 
 }
 
@@ -471,6 +473,7 @@ ul li a:hover {
 .question.active+.answer {
     display: block;
 }
+
 .question.active .arrow-down {
     display: none;
 }
@@ -480,40 +483,70 @@ ul li a:hover {
 }
 
 
-.accordion-label {
-    display: block;
-    background-color: #eee;
-    color: #444;
-    cursor: pointer;
-    padding: 18px;
-    border: none;
-    text-align: left;
-    font-size: 15px;
-    transition: background-color 0.4s;
-    user-select: none;
+/* Appointment offer */
+.appointment-container {
+    width: 100%;
+    position: relative;
+
 }
 
-.accordion-label:hover {
-    background-color: #ccc;
+.appointment-container img {
+    width: 100%;
+    height: 100%;
+    border-radius: 24px;
 }
 
-.accordion-content {
-    max-height: 0;
-    overflow: hidden;
-    transition: max-height 0.4s ease-out;
-    background-color: white;
-    border-top: 1px solid #ccc;
+.appointment-content {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0%;
+    bottom: 0%;
+    background-image: linear-gradient(to right, rgb(19, 18, 53), rgba(111, 112, 129, 0.5));
+    background-blend-mode: overlay;
+    z-index: 10;
+    border-radius: 24px;
+}
+.appointment{
+    display: flex;
+    justify-content: space-between;
+    /* align-items: center; */
+    height: 100%;
+    
+}
+.appointment-title{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: center;
+    margin-left: 60px;
+    /* align-items: center; */
 }
 
-.accordion-input {
-    display: none;
+.offer-text {
+    color: white;
+    font-size: 40px;
+    font-weight: 600px;
+    line-height: 55px;
 }
 
-.accordion-input:checked~.accordion-content {
-    max-height: 500px;
-    /* Adjust as needed */
+.sub-btn {
+    border: 1px solid white;
+    background: transparent;
+    color: white;
+    margin-left: 16px;
 }
 
-.panel-content {
-    padding: 0 18px;
+.logo {
+    margin: 60px 60px 0px 0px;
+    height: 40px;
+    width: 140pxpx;
+    
+    /* overflow: hidden; */
+}
+.logo img{
+width: 100%;
+height: 100%;
+object-fit: cover;
+object-position: center;
 }
