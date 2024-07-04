@@ -251,6 +251,11 @@ ul li a:hover {
     font-weight: 600;
     margin-top: 40px;
 }
+.main-btn:hover{
+    background: #020043;
+    border: 1px solid #FFE03D;
+    color: white;
+}
 
 .title-btn {
     background-color: transparent;
@@ -638,4 +643,11 @@ ul li a:hover {
 .copyright-text {
     font-size: 14px;
 
+}
+
+/* Responsive */
+@media screen and (max-width: 425px) {
+    .stat-container{
+        display: block;
+    }
 }
