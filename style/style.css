@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
 
 ⋆ {
     box-sizing: border-box;
@@ -7,9 +7,14 @@
 }
 
 body {
-    font-family: 'Work Sans', sans-serif;
-    margin: 0px 280px;
+    font-family: "Inter", sans-serif;
+    /* margin: 0px 280px; */
     background-color: #ececf0;
+}
+
+.container {
+    max-width: 1400px;
+    margin: 0 auto;
 }
 
 .navbar {
@@ -68,15 +73,25 @@ ul li a:hover {
 
 /* banner */
 .banner-container {
-    position: relative;
+    
     height: 600px;
+    background-image: url("../images/Group\ 21.png");
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* filter: brightness(75%); */
+    
 
 }
 
+.banner-item{
+    position: relative;
+}
 .banner-container img {
     width: 100%;
-    height: 100%;
+    height: 600px;
     /* filter: brightness(50%); */
+    object-fit: cover;
     border-radius: 60px;
     overflow: hidden;
     border: 1px solid #020043;
@@ -89,7 +104,7 @@ ul li a:hover {
     height: 100%;
     width: 100%;
     /* background-color: #c1d4da/0.5 ; */
-    background-image: linear-gradient(to right, rgba(52, 54, 54, 0.5), rgba(174, 196, 204, 0.3));
+    background-image: linear-gradient(to right, rgba(0, 0, 54, 0.5), rgba(174, 196, 204, 0.3));
     background-blend-mode: overlay;
     border-radius: 60px;
     z-index: 10;
@@ -111,7 +126,7 @@ ul li a:hover {
     border-radius: 16px;
     color: #040242;
     padding: 6px 20px 6px 20px;
-    margin-top: 20px;
+    margin-top: 30px;
 
 }
 
@@ -178,9 +193,30 @@ ul li a:hover {
     /* box-shadow: 10px 10px 10px; */
 }
 
-.certified-img {
+.certificate-img {
     height: 75px;
     width: 75px;
+}
+
+.small-sub-card {
+    height: 160px;
+    background-color: #fbf9f9;
+    position: relative;
+}
+
+.patient {
+    position: absolute;
+    bottom: 12px;
+    left: 36px;
+
+}
+
+.certified-img {
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    margin-left: -10px;
+
 }
 
 .certificate {
@@ -189,10 +225,7 @@ ul li a:hover {
     margin-top: -20px;
 }
 
-.small-sub-card {
-    height: 160px;
-    background-color: #fbf9f9;
-}
+
 
 /* Who we are section */
 .aboutus-container {
@@ -507,14 +540,16 @@ ul li a:hover {
     z-index: 10;
     border-radius: 24px;
 }
-.appointment{
+
+.appointment {
     display: flex;
     justify-content: space-between;
     /* align-items: center; */
     height: 100%;
-    
+
 }
-.appointment-title{
+
+.appointment-title {
     display: flex;
     flex-direction: column;
     height: 100%;
@@ -541,12 +576,67 @@ ul li a:hover {
     margin: 60px 60px 0px 0px;
     height: 40px;
     width: 140pxpx;
-    
+
     /* overflow: hidden; */
 }
-.logo img{
-width: 100%;
-height: 100%;
-object-fit: cover;
-object-position: center;
+
+.logo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+/* footer section */
+
+.footer-container {
+    background-color: #020043;
+    margin-top: 150px;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 400px;
+
+}
+
+.address {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.address p {
+    font-size: 16px;
+    line-height: 10px;
+
+}
+
+.route li {
+    list-style: none;
+    margin-top: 16px;
+}
+
+.route li a {
+    text-decoration: none;
+    color: white;
+    font-size: 14px;
+
+}
+
+.follow-us {
+    font-size: 14px;
+    font-weight: 600;
+    margin-top: 30px;
+
+}
+
+.social-platform {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 40px;
+}
+
+.copyright-text {
+    font-size: 14px;
+
 }
